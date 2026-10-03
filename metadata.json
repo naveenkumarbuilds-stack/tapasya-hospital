@@ -1,0 +1,8 @@
+{
+  "name": "Tapasya Multi-Speciality Hospital | Care & Booking",
+  "description": "Official website and online appointment scheduling for Tapasya Multi-Speciality Hospital in Laggere, Bengaluru, Karnataka. 24x7 emergency, dialysis, general medicine, and surgery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

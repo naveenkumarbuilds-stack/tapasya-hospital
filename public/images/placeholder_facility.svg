@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+  </g>
+  <!-- Hospital Emblems -->
+  <g transform="translate(400, 240)">
+    <!-- Outer Shield / Circle -->
+    <circle r="72" fill="#0f172a" stroke="#14b8a6" stroke-width="3" opacity="0.9" />
+    <!-- Medical Cross -->
+    <path d="M-12,-40 h24 v28 h28 v24 h-28 v28 h-24 v-28 h-28 v-24 h28 z" fill="url(#crossGrad)" />
+  </g>
+  <!-- Typography -->
+  <text x="400" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="22" fill="#ffffff" letter-spacing="1.2">
+    TAPASYA MULTI-SPECIALITY HOSPITAL
+  </text>
+  <text x="400" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="14" fill="#94a3b8" letter-spacing="1">
+    LAGGERE, BENGALURU, KARNATAKA
+  </text>
+  <text x="400" y="435" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="12" fill="#0d9488">
+    24/7 Casualty • Dialysis • General Medicine &amp; Surgery
+  </text>
+</svg>

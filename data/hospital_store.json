@@ -1,0 +1,673 @@
+{
+  "business": {
+    "name": "Tapasya Multi-Speciality Hospital",
+    "tagline": "24/7 Multi-Speciality Healthcare & Advanced Renal Care in Laggere",
+    "category": "Multi-Speciality Hospital",
+    "address": {
+      "line1": "No. 2, Suggappa Layout, Narasimhaswamy Nagar",
+      "landmark": "Next to Grace Public School, 50 Feet Main Road",
+      "area": "Laggere",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560058",
+      "coordinates": {
+        "lat": 13.0104892,
+        "lng": 77.5237789
+      },
+      "googleMapsUrl": "https://maps.app.goo.gl/EcYFQsPjZDsa5Ymj9"
+    },
+    "contact": {
+      "phone": "+91 98807 62646",
+      "emergencyPhone": "+91 98807 62646",
+      "whatsapp": "+91 98807 62646",
+      "email": "care@tapasyahospital.in"
+    },
+    "hours": {
+      "emergency": "24 Hours / 7 Days Open",
+      "opd": {
+        "weekdays": "08:00 AM – 08:30 PM",
+        "sundays": "08:30 AM – 04:00 PM"
+      },
+      "pharmacy": "24x7 In-House Pharmacy",
+      "dialysis": "24x7 Scheduled & Emergency Shifts"
+    },
+    "stats": {
+      "rating": 5,
+      "reviewCount": 52,
+      "establishedYear": 2025
+    },
+    "highlights": [
+      "24/7 Emergency & Casualty Care",
+      "Advanced Hemodialysis & Nephrology Unit",
+      "Modern Modular Operation Theatres",
+      "Dedicated General & Laparoscopic Surgery",
+      "Comprehensive Women & Child Health Unit",
+      "In-house Diagnostic Pathology & 24x7 Pharmacy"
+    ]
+  },
+  "services": [
+    {
+      "id": "srv-dialysis",
+      "name": "Hemodialysis & Nephrology Care",
+      "category": "Dialysis & Nephrology",
+      "description": "Advanced renal care led by Dr. Pramod. State-of-the-art dialysis machines with ultrapure water systems, single-use dialyzer protocols, and continuous monitoring.",
+      "durationMinutes": 45,
+      "feeVerified": false,
+      "department": "Nephrology & Renal Science",
+      "image": "/images/dialysis_nephrology.jpg",
+      "isActive": true,
+      "isPopular": true
+    },
+    {
+      "id": "srv-emergency",
+      "name": "24/7 Emergency & Trauma Observation",
+      "category": "Emergency & Trauma",
+      "description": "Round-the-clock emergency medical response with rapid triage, cardiac monitoring, oxygen therapy, trauma stabilization, and critical care ambulance coordination.",
+      "durationMinutes": 30,
+      "feeVerified": false,
+      "department": "Emergency & Critical Care",
+      "image": "/images/emergency_casualty.jpg",
+      "isActive": true,
+      "isPopular": true
+    },
+    {
+      "id": "srv-general-surgery",
+      "name": "General & Laparoscopic Surgery Consultation",
+      "category": "General & Laparoscopic Surgery",
+      "description": "Expert pre-surgical evaluation and minimally invasive laparoscopic procedures for hernia, gallbladder, appendix, and elective corrections including male breast (gynecomastia) reduction.",
+      "durationMinutes": 30,
+      "feeVerified": false,
+      "department": "General & Minimally Invasive Surgery",
+      "image": "/images/operation_theatre.jpg",
+      "isActive": true,
+      "isPopular": true
+    },
+    {
+      "id": "srv-gynecomastia",
+      "name": "Gynecomastia (Male Breast Reduction) Evaluation",
+      "category": "General & Laparoscopic Surgery",
+      "description": "Confidential clinical assessment and specialized surgical planning for male breast glandular and adipose tissue reduction by experienced surgeons.",
+      "durationMinutes": 30,
+      "feeVerified": false,
+      "department": "General & Minimally Invasive Surgery",
+      "image": "/images/operation_theatre.jpg",
+      "isActive": true
+    },
+    {
+      "id": "srv-internal-medicine",
+      "name": "General Internal Medicine & Chronic Care",
+      "category": "Internal Medicine",
+      "description": "Comprehensive adult diagnostics and treatment for fevers, respiratory infections, hypertension, diabetes management, geriatric health, and lifestyle conditions.",
+      "durationMinutes": 20,
+      "feeVerified": false,
+      "department": "Internal Medicine",
+      "image": "/images/opd_consultation.jpg",
+      "isActive": true,
+      "isPopular": true
+    },
+    {
+      "id": "srv-obgyn",
+      "name": "Obstetrics & Gynaecological Consultation",
+      "category": "Obstetrics & Gynaecology",
+      "description": "Prenatal care, high-risk pregnancy monitoring, ultrasound reviews, menstrual health, and women wellness consultations in a secure, private setting.",
+      "durationMinutes": 30,
+      "feeVerified": false,
+      "department": "Obstetrics & Gynaecology",
+      "image": "/images/opd_consultation.jpg",
+      "isActive": true
+    },
+    {
+      "id": "srv-pediatrics",
+      "name": "Paediatrics & Child Health Consultation",
+      "category": "Paediatrics",
+      "description": "Expert medical care for infants, children, and adolescents, including immunization scheduling, growth monitoring, developmental checks, and seasonal infections.",
+      "durationMinutes": 20,
+      "feeVerified": false,
+      "department": "Paediatrics",
+      "image": "/images/opd_consultation.jpg",
+      "isActive": true
+    },
+    {
+      "id": "srv-rare-hematology",
+      "name": "Specialized Supportive Care (Fanconi & Platelet Disorders)",
+      "category": "Internal Medicine",
+      "description": "Supportive hematology consults and monitoring protocols for rare blood disorders such as Fanconi Anemia, Glanzmann Thrombasthenia, and Porphyria management.",
+      "durationMinutes": 40,
+      "feeVerified": false,
+      "department": "Hematology & Internal Medicine",
+      "image": "/images/dialysis_nephrology.jpg",
+      "isActive": true
+    },
+    {
+      "id": "srv-diagnostics",
+      "name": "Comprehensive Health Checkup & Lab Review",
+      "category": "Diagnostics & Pharmacy",
+      "description": "Complete blood count, lipid profile, liver & kidney function tests, blood glucose with in-person doctor review and lifestyle recommendations.",
+      "durationMinutes": 25,
+      "feeVerified": false,
+      "department": "Diagnostic Services",
+      "image": "/images/opd_consultation.jpg",
+      "isActive": true
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-pramod-shankar",
+      "name": "Dr. Pramod Shankar",
+      "department": "Obstetrics & Gynaecology",
+      "specialty": "Obstetrics & Gynaecology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-sachin-patil",
+      "name": "Dr. Sachin Patil",
+      "department": "Obstetrics & Gynaecology",
+      "specialty": "Obstetrics & Gynaecology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-anil",
+      "name": "Dr. Anil",
+      "department": "General Surgery",
+      "specialty": "General Surgery & Pulmonology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-manojith",
+      "name": "Dr. Manojith",
+      "department": "General Surgery",
+      "specialty": "General Surgery",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-manjunath-patil",
+      "name": "Dr. Manjunath Patil",
+      "department": "Gastroenterology",
+      "specialty": "Gastroenterology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-vinay-c",
+      "name": "Dr. Vinay C",
+      "department": "Gastroenterology",
+      "specialty": "Gastroenterology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-hanumantharaju",
+      "name": "Dr. Hanumantharaju",
+      "department": "Orthopedics",
+      "specialty": "Orthopedics",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-ankit",
+      "name": "Dr. Ankit",
+      "department": "Orthopedics",
+      "specialty": "Orthopedics",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-priyadarshan",
+      "name": "Dr. Priyadarshan",
+      "department": "Plastic Surgery",
+      "specialty": "Plastic Surgery",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-arun",
+      "name": "Dr. Arun",
+      "department": "Nephrology",
+      "specialty": "Nephrology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-srikanth-rao",
+      "name": "Dr. Srikanth Rao",
+      "department": "Nephrology",
+      "specialty": "Nephrology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-harish",
+      "name": "Dr. Harish",
+      "department": "Anaesthesia",
+      "specialty": "Anaesthesia",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-veeresh",
+      "name": "Dr. Veeresh",
+      "department": "ENT",
+      "specialty": "ENT",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-dheeraj",
+      "name": "Dr. Dheeraj D S",
+      "department": "General Medicine",
+      "specialty": "General Medicine",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-somashekar",
+      "name": "Dr. Somashekar C M",
+      "department": "Cardiology",
+      "specialty": "Cardiology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-prakash",
+      "name": "Dr. Prakash B V",
+      "department": "Oncology",
+      "specialty": "Oncology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-navaneeth",
+      "name": "Dr. Navaneeth",
+      "department": "Urology",
+      "specialty": "Urology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-anand",
+      "name": "Dr. Anand",
+      "department": "Hematology",
+      "specialty": "Hematology",
+      "status": "confirmed",
+      "source": "Hospital Signboard"
+    },
+    {
+      "id": "doc-manish",
+      "name": "Dr. Manish",
+      "department": "Physiotherapy",
+      "specialty": "Physiotherapy",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Doctor name appears partially as Dr Manish on signboard; confirm complete name before publishing."
+    },
+    {
+      "id": "doc-soumya",
+      "name": "Dr. Soumya",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; department pairing not sufficiently clear from photo."
+    },
+    {
+      "id": "doc-rajkumar",
+      "name": "Dr. Rajkumar",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; department pairing not sufficiently clear from photo."
+    },
+    {
+      "id": "doc-kumarswamy",
+      "name": "Dr. Kumarswamy M",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; department pairing not sufficiently clear from photo."
+    },
+    {
+      "id": "doc-ricken-mehta",
+      "name": "Dr. Ricken Mehta",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; department pairing not sufficiently clear from photo."
+    },
+    {
+      "id": "doc-amaresh",
+      "name": "Dr. Amaresh",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; verify exact spelling and department before publishing."
+    },
+    {
+      "id": "doc-suraj",
+      "name": "Dr. Suraj",
+      "department": "Department to be confirmed",
+      "specialty": "Consultant",
+      "status": "awaiting_confirmation",
+      "source": "Hospital Signboard",
+      "notes": "Signboard name; department pairing not sufficiently clear from photo."
+    }
+  ],
+  "appointments": [
+    {
+      "id": "3c8def91-8d47-4a14-bb93-ef6bfbb9e68a",
+      "referenceNumber": "TAP-261008-F448",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorId": "doc-arun",
+      "doctorName": "Dr. Arun",
+      "date": "2026-10-08",
+      "timeSlot": "08:30",
+      "endTimeSlot": "09:15",
+      "durationMinutes": 45,
+      "patientName": "Test Verification Patient",
+      "patientPhone": "9880762646",
+      "patientAge": 40,
+      "patientGender": "male",
+      "notes": "Testing appointment creation and double-booking prevention",
+      "status": "cancelled",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:09:51.891+00:00",
+      "updatedAt": "2026-10-03T14:09:58.177+00:00",
+      "statusHistory": [
+        {
+          "status": "confirmed",
+          "timestamp": "2026-10-03T14:09:51.891Z",
+          "note": "Instant confirmation according to hospital OPD schedule",
+          "by": "system"
+        },
+        {
+          "status": "cancelled",
+          "timestamp": "2026-10-03T14:09:58.177+00:00",
+          "note": "Cleaned automated verification test",
+          "by": "admin"
+        }
+      ]
+    },
+    {
+      "id": "ef56cd45-350d-43ee-9d19-b6d853b4eb63",
+      "referenceNumber": "TAP-261004-675A",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Attending OPD Specialist",
+      "date": "2026-10-04",
+      "timeSlot": "08:30",
+      "endTimeSlot": "09:15",
+      "durationMinutes": 45,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "patientEmail": "naveen768234@gmail.com",
+      "patientAge": 12,
+      "patientGender": "male",
+      "notes": "kidney",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T13:48:23.338+00:00",
+      "updatedAt": "2026-10-03T13:48:48.615+00:00",
+      "statusHistory": [
+        {
+          "status": "confirmed",
+          "timestamp": "2026-10-03T13:48:23.338Z",
+          "note": "Instant confirmation according to hospital OPD schedule",
+          "by": "system"
+        },
+        {
+          "status": "completed",
+          "timestamp": "2026-10-03T13:48:48.615+00:00",
+          "note": "Status updated to completed by administrator",
+          "by": "admin"
+        }
+      ]
+    },
+    {
+      "id": "ba8ccd08-aac3-478e-9013-bbea3d510ba6",
+      "referenceNumber": "TAP-261003-1834",
+      "serviceId": "srv-rare-hematology",
+      "serviceName": "Specialized Supportive Care (Fanconi & Platelet Disorders)",
+      "doctorName": "Attending OPD Specialist",
+      "date": "2026-10-03",
+      "timeSlot": "12:30",
+      "endTimeSlot": "13:10",
+      "durationMinutes": 40,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "patientEmail": "nafsdfad@gmail.com",
+      "patientAge": 45,
+      "patientGender": "male",
+      "notes": "kidney",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-02T16:18:02.994+00:00",
+      "updatedAt": "2026-10-02T16:18:32.903+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-02T16:18:32.903+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "f079212d-73d1-4442-a8dd-23ab4cbd7c3a",
+      "referenceNumber": "TAP-261003-CFD0",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Attending OPD Specialist",
+      "date": "2026-10-03",
+      "timeSlot": "11:30",
+      "endTimeSlot": "12:15",
+      "durationMinutes": 45,
+      "patientName": "Naveen",
+      "patientPhone": "8431385299",
+      "patientEmail": "naveenkumar.builds@gmail.com",
+      "patientAge": 45,
+      "patientGender": "other",
+      "notes": "Kidney",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-02T16:13:57.86+00:00",
+      "updatedAt": "2026-10-03T13:48:58.207+00:00",
+      "statusHistory": [
+        {
+          "status": "confirmed",
+          "timestamp": "2026-10-02T16:13:57.86+00:00",
+          "note": "Database status: confirmed",
+          "by": "system"
+        },
+        {
+          "status": "completed",
+          "timestamp": "2026-10-03T13:48:58.207+00:00",
+          "note": "Status updated to completed by administrator",
+          "by": "admin"
+        }
+      ]
+    },
+    {
+      "id": "ac588e1d-7756-473a-9e7b-65c7c550b59d",
+      "referenceNumber": "TAP-261003-D7F9",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Attending OPD Specialist",
+      "date": "2026-10-03",
+      "timeSlot": "10:30",
+      "endTimeSlot": "11:15",
+      "durationMinutes": 45,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "patientEmail": "jgdsfgygayg@gmail.com",
+      "patientAge": 45,
+      "patientGender": "male",
+      "notes": "kidney",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-02T03:37:14.083+00:00",
+      "updatedAt": "2026-10-02T03:37:39.296+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-02T03:37:39.296+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "0c14358b-8889-4c83-94c4-2800fadff4fe",
+      "referenceNumber": "TAP-261003-5FC9",
+      "serviceId": "srv-rare-hematology",
+      "serviceName": "Specialized Supportive Care (Fanconi & Platelet Disorders)",
+      "doctorName": "Attending OPD Specialist",
+      "date": "2026-10-03",
+      "timeSlot": "09:30",
+      "endTimeSlot": "10:10",
+      "durationMinutes": 40,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "patientEmail": "ghfdtfstftdwfy@qmail.com",
+      "patientAge": 16,
+      "patientGender": "male",
+      "notes": "med",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-02T02:27:11.419+00:00",
+      "updatedAt": "2026-10-02T02:29:13.559+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-02T02:29:13.559+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "4d6e4476-b96f-46bb-a204-3aab73c81abe",
+      "referenceNumber": "TAP-261003-5237",
+      "serviceId": "srv-pediatrics",
+      "serviceName": "Paediatrics & Child Health Consultation",
+      "doctorId": "doc-physician",
+      "doctorName": "Dr. Naveen Kumar",
+      "date": "2026-10-03",
+      "timeSlot": "09:00",
+      "endTimeSlot": "09:20",
+      "durationMinutes": 20,
+      "patientName": "naveen",
+      "patientPhone": "2344345654",
+      "patientEmail": "nsggsfff@gmail.com",
+      "patientAge": 16,
+      "patientGender": "male",
+      "notes": "child",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-01T17:06:42.581+00:00",
+      "updatedAt": "2026-10-02T02:45:57.455+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-02T02:45:57.455+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "6cb1649f-6a17-4dc2-b33b-6a35b6f54fca",
+      "referenceNumber": "TAP-WALK-C42D",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Duty Doctor",
+      "date": "2026-10-01",
+      "timeSlot": "10:00",
+      "endTimeSlot": "10:45",
+      "durationMinutes": 45,
+      "patientName": "naveen",
+      "patientPhone": "6536253253",
+      "notes": "Walk-in reception registration",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-01T17:49:23.438+00:00",
+      "updatedAt": "2026-10-02T02:43:49.899+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-02T02:43:49.899+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    }
+  ],
+  "blockedPeriods": [],
+  "inquiries": [],
+  "settings": {
+    "advanceBookingDays": 14,
+    "bufferMinutes": 10,
+    "autoConfirmRoutine": true,
+    "cancellationCutoffHours": 2,
+    "emergencyNotice": "For medical emergencies requiring immediate attention, call 24x7 Emergency Line +91 98807 62646 directly or proceed straight to the Casualty triage desk.",
+    "noticeBanner": {
+      "enabled": true,
+      "text": "24/7 Casualty & Dialysis Services Active. Walk-in emergency consultations welcome anytime."
+    }
+  },
+  "reviews": [
+    {
+      "id": "rev-1",
+      "author": "Rajesh K.",
+      "rating": 5,
+      "date": "Recent verified patient",
+      "text": "Dr. Pramod took exceptional care during dialysis for my father. The nursing team is attentive, patient, and very well-trained. Facilities are exceptionally clean.",
+      "source": "Google Maps",
+      "tag": "Nephrology & Dialysis"
+    },
+    {
+      "id": "rev-2",
+      "author": "Deepa Srinivas",
+      "rating": 5,
+      "date": "Verified local resident",
+      "text": "Clean and well-maintained hospital right on 50 Feet Main Road in Laggere. Professional and caring doctors and nurses. No unnecessary delays.",
+      "source": "Justdial",
+      "tag": "Hospital Facility"
+    },
+    {
+      "id": "rev-3",
+      "author": "Manjunath B.",
+      "rating": 5,
+      "date": "Verified patient",
+      "text": "Visited for acute fever. Proper diagnosis was made and clear advice given without ordering unnecessary expensive tests. Very honest and reliable healthcare in this area.",
+      "source": "Google Maps",
+      "tag": "General Medicine"
+    },
+    {
+      "id": "rev-4",
+      "author": "Kavitha M.",
+      "rating": 5,
+      "date": "Verified review",
+      "text": "Had to visit casualty at 11 PM. The on-duty medical officer and nurses acted immediately. Very grateful for this 24-hour hospital near Grace Public School.",
+      "source": "Justdial",
+      "tag": "24/7 Emergency"
+    },
+    {
+      "id": "rev-5",
+      "author": "Venkatesh Prasad",
+      "rating": 5,
+      "date": "Verified patient",
+      "text": "Modern equipment and very peaceful ambience. Doctors listen carefully to your concerns. Overall 5 star experience for our family.",
+      "source": "Google Maps",
+      "tag": "Patient Experience"
+    }
+  ],
+  "adminToken": "tapasya_session_admin_2026"
+}
