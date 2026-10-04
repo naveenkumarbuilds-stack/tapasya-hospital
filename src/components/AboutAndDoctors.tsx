@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ArrowRight, ShieldCheck, Star, Award, Briefcase, IndianRupee, Stethoscope, MapPin } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Star, Award, Briefcase, Stethoscope } from 'lucide-react';
 import type { DoctorProfile } from '../types';
 
 interface AboutAndDoctorsProps {
@@ -241,27 +241,16 @@ export const AboutAndDoctors: React.FC<AboutAndDoctorsProps> = ({
                       </p>
                     )}
 
-                    {/* Rating & Fee Row */}
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                      {doc.rating && (
-                        <div className="flex items-center gap-1">
-                          <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                          <span className="text-sm font-bold text-slate-900">{doc.rating}</span>
-                          {doc.reviewCount && (
-                            <span className="text-[10px] text-slate-400">({doc.reviewCount})</span>
-                          )}
-                        </div>
-                      )}
-                      {doc.feeVerified && doc.consultationFee ? (
-                        <div className="flex items-center gap-0.5">
-                          <IndianRupee className="w-3.5 h-3.5 text-slate-700" />
-                          <span className="text-sm font-bold text-slate-900">{doc.consultationFee}</span>
-                          <span className="text-[10px] text-slate-400 ml-0.5">fee</span>
-                        </div>
-                      ) : (
-                        <span className="text-[10px] text-slate-400">Fee at hospital</span>
-                      )}
-                    </div>
+                    {/* Rating Row */}
+                    {doc.rating && (
+                      <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1">
+                        <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                        <span className="text-sm font-bold text-slate-900">{doc.rating}</span>
+                        {doc.reviewCount && (
+                          <span className="text-[10px] text-slate-400">({doc.reviewCount} reviews)</span>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Booking Action */}
