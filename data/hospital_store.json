@@ -488,6 +488,36 @@
   ],
   "appointments": [
     {
+      "id": "5b157a15-66a1-4a47-86e5-ed5c6cc6b2c4",
+      "referenceNumber": "TAP-261005-5216",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorId": "doc-pramod-shankar",
+      "doctorName": "Dr. Pramod Shankar",
+      "date": "2026-10-05",
+      "timeSlot": "09:30",
+      "endTimeSlot": "10:15",
+      "durationMinutes": 45,
+      "patientName": "naveen kumar",
+      "patientPhone": "8431385299",
+      "patientEmail": "naveen768234@gmail.com",
+      "patientAge": 20,
+      "patientGender": "male",
+      "notes": "fever",
+      "status": "confirmed",
+      "urgency": "routine",
+      "createdAt": "2026-10-04T00:55:46.353Z",
+      "updatedAt": "2026-10-04T00:55:46.353Z",
+      "statusHistory": [
+        {
+          "status": "confirmed",
+          "timestamp": "2026-10-04T00:55:46.353Z",
+          "note": "Instant confirmation according to hospital OPD schedule",
+          "by": "system"
+        }
+      ]
+    },
+    {
       "id": "3c8def91-8d47-4a14-bb93-ef6bfbb9e68a",
       "referenceNumber": "TAP-261008-F448",
       "serviceId": "srv-dialysis",
