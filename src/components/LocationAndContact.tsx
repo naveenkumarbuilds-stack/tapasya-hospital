@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Clock, ExternalLink, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, ExternalLink, Send, CheckCircle2, AlertCircle, ShieldCheck, CreditCard, Building2 } from 'lucide-react';
 import type { BusinessProfile } from '../types';
 import { api } from '../api';
 
@@ -53,18 +53,57 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
     }
   };
 
+  const insuranceProviders = [
+    'CGHS', 'ESIS', 'Star Health', 'ICICI Lombard', 'HDFC ERGO',
+    'Bajaj Allianz', 'New India Assurance', 'National Insurance',
+    'United India Insurance', 'Reliance General', 'Tata AIG', 'Cashless Facility Available'
+  ];
+
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <section id="contact" className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-12">
-          <p className="text-xs font-bold tracking-widest text-teal-700 uppercase">
+          <p className="text-xs font-bold tracking-widest text-secondary-600 uppercase">
             Location &amp; 24/7 Access
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">
             Visit Tapasya Multi-Speciality Hospital in Laggere
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2">
-            Centrally situated on 50 Feet Main Road next to Grace Public School, Laggere, Bengaluru, Karnataka with dedicated ambulance drop-off, casualty triage, and wheelchair-accessible facilities.
+            Centrally situated on 50 Feet Main Road next to Grace Public School, Laggere, Bengaluru, Karnataka
+            with dedicated ambulance drop-off, casualty triage, and wheelchair-accessible facilities.
+          </p>
+        </div>
+
+        {/* Insurance / Cashless Section */}
+        <div className="mb-12 p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-secondary-50 text-secondary-600 flex items-center justify-center shrink-0">
+              <CreditCard className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-slate-900">Insurance &amp; Cashless Facility</h3>
+              <p className="text-xs text-slate-500">We accept major health insurance providers with cashless treatment options.</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {insuranceProviders.map((provider, i) => (
+              <span
+                key={i}
+                className={`px-3 py-1.5 text-xs font-medium rounded-lg border ${
+                  provider === 'Cashless Facility Available'
+                    ? 'bg-secondary-50 text-secondary-700 border-secondary-200 font-bold'
+                    : 'bg-slate-50 text-slate-700 border-slate-200'
+                }`}
+              >
+                {provider === 'Cashless Facility Available' && <ShieldCheck className="w-3 h-3 inline mr-1" />}
+                {provider}
+              </span>
+            ))}
+          </div>
+          <p className="mt-4 text-[11px] text-slate-400 flex items-center gap-1.5">
+            <Building2 className="w-3.5 h-3.5" />
+            For insurance and TPA queries, please contact our reception desk at {phoneNum}.
           </p>
         </div>
 
@@ -74,7 +113,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
             {/* Address Card */}
             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
@@ -94,7 +133,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                       href="https://maps.app.goo.gl/EcYFQsPjZDsa5Ymj9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-teal-700 hover:text-teal-800 underline"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-600 hover:text-primary-700 underline"
                     >
                       <span>Open Live Route on Google Maps</span>
                       <ExternalLink className="w-3.5 h-3.5" />
@@ -104,10 +143,24 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
               </div>
             </div>
 
+            {/* Google Map Embed */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-64">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0!2d77.5237789!3d13.0104892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA2JzM3LjgiTiA3NcKwMzEnMjUuNiJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Tapasya Hospital Location Map"
+              />
+            </div>
+
             {/* Operating Hours Card */}
             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center shrink-0">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div className="flex-1 space-y-3">
@@ -131,12 +184,12 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                       <span className="font-bold text-slate-900">24x7 Open</span>
                     </div>
                     <div className="flex justify-between pt-2">
-                      <span className="text-slate-600">OPD Consultations (Mon - Sat):</span>
-                      <span className="font-bold text-teal-800">08:00 AM – 08:30 PM</span>
+                      <span className="text-slate-600">OPD (Mon - Sat):</span>
+                      <span className="font-bold text-primary-700">08:00 AM – 08:30 PM</span>
                     </div>
                     <div className="flex justify-between pt-2">
-                      <span className="text-slate-600">OPD Consultations (Sunday):</span>
-                      <span className="font-bold text-teal-800">08:30 AM – 04:00 PM</span>
+                      <span className="text-slate-600">OPD (Sunday):</span>
+                      <span className="font-bold text-primary-700">08:30 AM – 04:00 PM</span>
                     </div>
                   </div>
                 </div>
@@ -144,15 +197,15 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
             </div>
 
             {/* Direct Phone Assistance */}
-            <div className="bg-teal-900 text-white rounded-2xl p-6 shadow-md flex items-center justify-between">
+            <div className="bg-primary-500 text-white rounded-2xl p-6 shadow-md flex items-center justify-between">
               <div>
-                <span className="text-xs uppercase font-semibold text-teal-300">24/7 Helpline</span>
+                <span className="text-xs uppercase font-semibold text-primary-200">24/7 Helpline</span>
                 <div className="text-xl font-extrabold mt-0.5">{phoneNum}</div>
-                <p className="text-xs text-teal-200 mt-1">Reception, Dialysis &amp; Casualty Ambulance</p>
+                <p className="text-xs text-primary-100 mt-1">Reception, Dialysis &amp; Casualty Ambulance</p>
               </div>
               <a
                 href={`tel:${phoneNum.replace(/\s+/g, '')}`}
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs rounded-xl shadow-md transition-all active:scale-95"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-secondary-500 hover:bg-secondary-400 text-white font-bold text-xs rounded-xl shadow-md transition-all active:scale-95 min-h-[44px]"
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>Call Now</span>
@@ -164,7 +217,8 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
           <div className="lg:col-span-6 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
             <h4 className="text-lg font-bold text-slate-900">Send an Inquiry or Request Callback</h4>
             <p className="text-xs text-slate-500 mt-1">
-              Have questions about dialysis slots, surgery consultations, or health services? Send a message to our reception team.
+              Have questions about dialysis slots, surgery consultations, or health services? Send a message
+              to our reception team.
             </p>
 
             {successMsg && (
@@ -175,8 +229,8 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
             )}
 
             {errorMsg && (
-              <div className="mt-4 p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 shrink-0 text-rose-600" />
+              <div className="mt-4 p-3.5 rounded-xl bg-emergency-50 border border-emergency-200 text-emergency-800 text-xs flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 shrink-0 text-emergency-600" />
                 <span>{errorMsg}</span>
               </div>
             )}
@@ -184,7 +238,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
             <form onSubmit={handleSubmit} className="mt-5 space-y-4">
               <div>
                 <label className="block text-xs font-semibold text-slate-700 mb-1">
-                  Full Name <span className="text-rose-500">*</span>
+                  Full Name <span className="text-emergency-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -192,14 +246,14 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                   value={name}
                   onChange={e => setName(e.target.value)}
                   placeholder="e.g. Anand Murthy"
-                  className="w-full px-3.5 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-900"
+                  className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900"
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-semibold text-slate-700 mb-1">
-                    Mobile Phone <span className="text-rose-500">*</span>
+                    Mobile Phone <span className="text-emergency-500">*</span>
                   </label>
                   <input
                     type="tel"
@@ -207,19 +261,19 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                     value={phone}
                     onChange={e => setPhone(e.target.value)}
                     placeholder="98807 62646"
-                    className="w-full px-3.5 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-900 font-mono"
+                    className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900"
                   />
                 </div>
                 <div>
                   <label className="block text-xs font-semibold text-slate-700 mb-1">
-                    Email Address <span className="text-slate-400 font-normal">(Optional)</span>
+                    Email <span className="text-slate-400 font-normal">(Optional)</span>
                   </label>
                   <input
                     type="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     placeholder="user@example.com"
-                    className="w-full px-3.5 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-900"
+                    className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900"
                   />
                 </div>
               </div>
@@ -231,21 +285,19 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                 <select
                   value={department}
                   onChange={e => setDepartment(e.target.value)}
-                  className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-900"
+                  className="w-full px-3 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900"
                 >
                   <option value="General Inquiry / Reception">General Inquiry / Reception</option>
                   <option value="Dialysis & Nephrology Unit">Dialysis &amp; Nephrology Unit (Dr. Pramod)</option>
                   <option value="General & Laparoscopic Surgery">General &amp; Laparoscopic Surgery</option>
-                  <option value="Male Breast Reduction (Gynecomastia)">Male Breast Reduction (Gynecomastia)</option>
                   <option value="Obstetrics & Gynaecology">Obstetrics &amp; Gynaecology</option>
-                  <option value="Paediatrics & Child Health">Paediatrics &amp; Child Health</option>
-                  <option value="Specialized Blood Disorders (Fanconi / Platelets)">Specialized Blood Disorders (Fanconi / Platelets)</option>
+                  <option value="Insurance & TPA Query">Insurance &amp; TPA Query</option>
                 </select>
               </div>
 
               <div>
                 <label className="block text-xs font-semibold text-slate-700 mb-1">
-                  Your Message or Medical Question <span className="text-rose-500">*</span>
+                  Your Message or Medical Question <span className="text-emergency-500">*</span>
                 </label>
                 <textarea
                   required
@@ -253,7 +305,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                   value={message}
                   onChange={e => setMessage(e.target.value)}
                   placeholder="Describe your inquiry or question..."
-                  className="w-full px-3.5 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-900"
+                  className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900"
                 />
               </div>
 
@@ -263,7 +315,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                   id="urgent-cb"
                   checked={isEmergencyCallback}
                   onChange={e => setIsEmergencyCallback(e.target.checked)}
-                  className="rounded text-rose-600 focus:ring-rose-500"
+                  className="rounded text-emergency-500 focus:ring-emergency-500"
                 />
                 <label htmlFor="urgent-cb" className="cursor-pointer text-[11px] font-medium text-slate-700">
                   Request urgent telephone callback from duty doctor
@@ -273,7 +325,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full py-2.5 px-4 text-xs font-bold text-white bg-teal-600 hover:bg-teal-700 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2"
+                className="w-full py-3 px-4 text-sm font-bold text-white bg-primary-500 hover:bg-primary-600 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 min-h-[44px]"
               >
                 {submitting ? (
                   <>
@@ -282,7 +334,7 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ business
                   </>
                 ) : (
                   <>
-                    <Send className="w-3.5 h-3.5" />
+                    <Send className="w-4 h-4" />
                     <span>Send Inquiry to Hospital</span>
                   </>
                 )}

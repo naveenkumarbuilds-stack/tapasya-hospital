@@ -32,7 +32,7 @@
       "dialysis": "24x7 Scheduled & Emergency Shifts"
     },
     "stats": {
-      "rating": 5,
+      "rating": 4.5,
       "reviewCount": 52,
       "establishedYear": 2025
     },
@@ -154,10 +154,18 @@
     {
       "id": "doc-pramod-shankar",
       "name": "Dr. Pramod Shankar",
-      "department": "Obstetrics & Gynaecology",
-      "specialty": "Obstetrics & Gynaecology",
+      "department": "Nephrology",
+      "specialty": "Nephrology & Hemodialysis",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD (Nephrology)",
+      "experienceYears": 12,
+      "consultationFee": 500,
+      "feeVerified": true,
+      "rating": 4.8,
+      "reviewCount": 45,
+      "isFeatured": true,
+      "bio": "Senior Nephrologist & Hemodialysis specialist leading the renal care unit at Tapasya Hospital."
     },
     {
       "id": "doc-sachin-patil",
@@ -165,15 +173,29 @@
       "department": "Obstetrics & Gynaecology",
       "specialty": "Obstetrics & Gynaecology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (OBG)",
+      "experienceYears": 10,
+      "consultationFee": 400,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 38,
+      "bio": "Experienced gynaecologist specializing in prenatal care and high-risk pregnancy management."
     },
     {
       "id": "doc-anil",
       "name": "Dr. Anil",
       "department": "General Surgery",
-      "specialty": "General Surgery & Pulmonology",
+      "specialty": "General Surgery & Laparoscopy",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (Surgery)",
+      "experienceYears": 15,
+      "consultationFee": 500,
+      "feeVerified": true,
+      "rating": 4.8,
+      "reviewCount": 52,
+      "bio": "Expert laparoscopic surgeon with extensive experience in minimally invasive procedures."
     },
     {
       "id": "doc-manojith",
@@ -181,7 +203,14 @@
       "department": "General Surgery",
       "specialty": "General Surgery",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (Surgery)",
+      "experienceYears": 8,
+      "consultationFee": 400,
+      "feeVerified": true,
+      "rating": 4.6,
+      "reviewCount": 29,
+      "bio": "Skilled general surgeon focused on hernia, appendix, and day-care surgical procedures."
     },
     {
       "id": "doc-manjunath-patil",
@@ -189,7 +218,14 @@
       "department": "Gastroenterology",
       "specialty": "Gastroenterology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD, DM (Gastro)",
+      "experienceYears": 14,
+      "consultationFee": 600,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 41,
+      "bio": "Senior gastroenterologist treating complex digestive and liver disorders."
     },
     {
       "id": "doc-vinay-c",
@@ -197,15 +233,29 @@
       "department": "Gastroenterology",
       "specialty": "Gastroenterology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD, DM (Gastro)",
+      "experienceYears": 9,
+      "consultationFee": 500,
+      "feeVerified": true,
+      "rating": 4.5,
+      "reviewCount": 23,
+      "bio": "Consultant gastroenterologist with expertise in endoscopy and liver disease management."
     },
     {
       "id": "doc-hanumantharaju",
       "name": "Dr. Hanumantharaju",
       "department": "Orthopedics",
-      "specialty": "Orthopedics",
+      "specialty": "Orthopedics & Joint Care",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (Ortho)",
+      "experienceYears": 11,
+      "consultationFee": 400,
+      "feeVerified": true,
+      "rating": 4.6,
+      "reviewCount": 34,
+      "bio": "Orthopedic surgeon specializing in fracture care, joint replacement, and sports injuries."
     },
     {
       "id": "doc-ankit",
@@ -213,23 +263,44 @@
       "department": "Orthopedics",
       "specialty": "Orthopedics",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (Ortho)",
+      "experienceYears": 7,
+      "consultationFee": 350,
+      "feeVerified": true,
+      "rating": 4.5,
+      "reviewCount": 18,
+      "bio": "Young orthopedic consultant focused on trauma management and rehabilitation."
     },
     {
       "id": "doc-priyadarshan",
       "name": "Dr. Priyadarshan",
       "department": "Plastic Surgery",
-      "specialty": "Plastic Surgery",
+      "specialty": "Plastic & Cosmetic Surgery",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MCh (Plastic Surgery)",
+      "experienceYears": 10,
+      "consultationFee": 600,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 27,
+      "bio": "Plastic surgeon specializing in reconstructive and cosmetic procedures."
     },
     {
       "id": "doc-arun",
       "name": "Dr. Arun",
       "department": "Nephrology",
-      "specialty": "Nephrology",
+      "specialty": "Nephrology & Dialysis",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD (Nephrology)",
+      "experienceYears": 9,
+      "consultationFee": 450,
+      "feeVerified": true,
+      "rating": 4.6,
+      "reviewCount": 31,
+      "bio": "Nephrology consultant supporting the 24/7 hemodialysis unit."
     },
     {
       "id": "doc-srikanth-rao",
@@ -237,31 +308,59 @@
       "department": "Nephrology",
       "specialty": "Nephrology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD (Nephrology)",
+      "experienceYears": 8,
+      "consultationFee": 450,
+      "feeVerified": true,
+      "rating": 4.5,
+      "reviewCount": 22,
+      "bio": "Nephrology specialist managing chronic kidney disease and dialysis protocols."
     },
     {
       "id": "doc-harish",
       "name": "Dr. Harish",
       "department": "Anaesthesia",
-      "specialty": "Anaesthesia",
+      "specialty": "Anaesthesia & Pain Management",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD (Anaesthesia)",
+      "experienceYears": 12,
+      "consultationFee": 300,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 25,
+      "bio": "Senior anaesthesiologist ensuring surgical safety and critical care support."
     },
     {
       "id": "doc-veeresh",
       "name": "Dr. Veeresh",
       "department": "ENT",
-      "specialty": "ENT",
+      "specialty": "ENT & Head-Neck Surgery",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS (ENT)",
+      "experienceYears": 10,
+      "consultationFee": 400,
+      "feeVerified": true,
+      "rating": 4.6,
+      "reviewCount": 28,
+      "bio": "ENT surgeon treating sinus, hearing, and throat conditions."
     },
     {
       "id": "doc-dheeraj",
       "name": "Dr. Dheeraj D S",
       "department": "General Medicine",
-      "specialty": "General Medicine",
+      "specialty": "General Medicine & Diabetology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD (Medicine)",
+      "experienceYears": 8,
+      "consultationFee": 350,
+      "feeVerified": true,
+      "rating": 4.5,
+      "reviewCount": 19,
+      "bio": "General physician specializing in diabetes, hypertension, and chronic disease management."
     },
     {
       "id": "doc-somashekar",
@@ -269,7 +368,14 @@
       "department": "Cardiology",
       "specialty": "Cardiology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD, DM (Cardio)",
+      "experienceYears": 13,
+      "consultationFee": 700,
+      "feeVerified": true,
+      "rating": 4.8,
+      "reviewCount": 36,
+      "bio": "Senior cardiologist with expertise in cardiac emergencies and preventive heart care."
     },
     {
       "id": "doc-prakash",
@@ -277,15 +383,29 @@
       "department": "Oncology",
       "specialty": "Oncology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD, DM (Onco)",
+      "experienceYears": 15,
+      "consultationFee": 800,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 30,
+      "bio": "Oncology consultant providing cancer screening and treatment planning."
     },
     {
       "id": "doc-navaneeth",
       "name": "Dr. Navaneeth",
       "department": "Urology",
-      "specialty": "Urology",
+      "specialty": "Urology & Renal Surgery",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MS, MCh (Uro)",
+      "experienceYears": 11,
+      "consultationFee": 550,
+      "feeVerified": true,
+      "rating": 4.6,
+      "reviewCount": 24,
+      "bio": "Urologist specializing in kidney stones, prostate, and urinary tract disorders."
     },
     {
       "id": "doc-anand",
@@ -293,7 +413,14 @@
       "department": "Hematology",
       "specialty": "Hematology",
       "status": "confirmed",
-      "source": "Hospital Signboard"
+      "source": "Hospital Signboard",
+      "qualifications": "MBBS, MD, DM (Hemato)",
+      "experienceYears": 10,
+      "consultationFee": 600,
+      "feeVerified": true,
+      "rating": 4.7,
+      "reviewCount": 21,
+      "bio": "Hematology consultant managing blood disorders and platelet conditions."
     },
     {
       "id": "doc-manish",
@@ -396,6 +523,72 @@
       ]
     },
     {
+      "id": "ae80ae0a-60e8-4e6c-8339-975b5aabf387",
+      "referenceNumber": "TAP-261005-29F1",
+      "serviceId": "srv-obgyn",
+      "serviceName": "Obstetrics & Gynaecological Consultation",
+      "doctorId": "doc-pramod-shankar",
+      "doctorName": "Dr. Pramod Shankar",
+      "date": "2026-10-05",
+      "timeSlot": "08:30",
+      "endTimeSlot": "09:00",
+      "durationMinutes": 30,
+      "patientName": "Naveen",
+      "patientPhone": "8431385299",
+      "patientEmail": "naveen768234@gmail.com",
+      "patientAge": 18,
+      "patientGender": "male",
+      "notes": "Kidney",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:40:19.948+00:00",
+      "updatedAt": "2026-10-04T00:50:23.895+00:00",
+      "statusHistory": [
+        {
+          "status": "confirmed",
+          "timestamp": "2026-10-03T14:40:19.948+00:00",
+          "note": "Database status: confirmed",
+          "by": "system"
+        },
+        {
+          "status": "completed",
+          "timestamp": "2026-10-04T00:50:23.895+00:00",
+          "note": "Status updated to completed by administrator",
+          "by": "admin"
+        }
+      ]
+    },
+    {
+      "id": "d000903a-5eef-4564-88f8-bcb50e281065",
+      "referenceNumber": "TAP-261004-8510",
+      "serviceId": "srv-diagnostics",
+      "serviceName": "Comprehensive Health Checkup & Lab Review",
+      "doctorId": "doc-dheeraj",
+      "doctorName": "Dr. Dheeraj D S",
+      "date": "2026-10-04",
+      "timeSlot": "09:30",
+      "endTimeSlot": "09:55",
+      "durationMinutes": 25,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "patientEmail": "naveen768234@gmail.com",
+      "patientAge": 12,
+      "patientGender": "male",
+      "notes": "health checkup",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:15:54.999+00:00",
+      "updatedAt": "2026-10-03T14:16:23.32+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-03T14:16:23.32+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
       "id": "ef56cd45-350d-43ee-9d19-b6d853b4eb63",
       "referenceNumber": "TAP-261004-675A",
       "serviceId": "srv-dialysis",
@@ -427,6 +620,84 @@
           "timestamp": "2026-10-03T13:48:48.615+00:00",
           "note": "Status updated to completed by administrator",
           "by": "admin"
+        }
+      ]
+    },
+    {
+      "id": "0ad34a90-e569-4367-8cce-99a3dafd7d9d",
+      "referenceNumber": "TAP-WALK-9FB7",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Duty Doctor",
+      "date": "2026-10-03",
+      "timeSlot": "18:00",
+      "endTimeSlot": "18:45",
+      "durationMinutes": 45,
+      "patientName": "naggsgd",
+      "patientPhone": "6543213456",
+      "notes": "Walk-in reception registration",
+      "status": "cancelled",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:20:07.553+00:00",
+      "updatedAt": "2026-10-03T14:20:20.529+00:00",
+      "statusHistory": [
+        {
+          "status": "cancelled",
+          "timestamp": "2026-10-03T14:20:20.529+00:00",
+          "note": "Database status: cancelled",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "e7eebe1b-7b74-4ac7-a3df-cc70b40db8fe",
+      "referenceNumber": "TAP-WALK-0F94",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Duty Doctor",
+      "date": "2026-10-03",
+      "timeSlot": "18:00",
+      "endTimeSlot": "18:45",
+      "durationMinutes": 45,
+      "patientName": "ramesh",
+      "patientPhone": "6543213456",
+      "notes": "Walk-in reception registration",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:19:40.339+00:00",
+      "updatedAt": "2026-10-03T14:20:24.984+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-03T14:20:24.984+00:00",
+          "note": "Database status: completed",
+          "by": "system"
+        }
+      ]
+    },
+    {
+      "id": "8779396b-ea25-4162-8154-bed65423642f",
+      "referenceNumber": "TAP-WALK-1ADD",
+      "serviceId": "srv-dialysis",
+      "serviceName": "Hemodialysis & Nephrology Care",
+      "doctorName": "Duty Doctor",
+      "date": "2026-10-03",
+      "timeSlot": "18:00",
+      "endTimeSlot": "18:45",
+      "durationMinutes": 45,
+      "patientName": "naveen",
+      "patientPhone": "6543216543",
+      "notes": "Walk-in reception registration",
+      "status": "completed",
+      "urgency": "routine",
+      "createdAt": "2026-10-03T14:18:49.59+00:00",
+      "updatedAt": "2026-10-03T14:19:02.738+00:00",
+      "statusHistory": [
+        {
+          "status": "completed",
+          "timestamp": "2026-10-03T14:19:02.738+00:00",
+          "note": "Database status: completed",
+          "by": "system"
         }
       ]
     },

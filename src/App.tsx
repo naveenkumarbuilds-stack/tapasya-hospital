@@ -1,13 +1,9 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState, useEffect } from 'react';
 import type { BusinessProfile, ServiceItem, DoctorProfile, ReviewItem } from './types';
 import { api } from './api';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { WhyChooseTapasya } from './components/WhyChooseTapasya';
 import { ServiceCatalogue } from './components/ServiceCatalogue';
 import { BookingWizard } from './components/BookingWizard';
 import { AboutAndDoctors } from './components/AboutAndDoctors';
@@ -26,7 +22,6 @@ export default function App() {
   const [loading, setLoading] = useState<boolean>(true);
   const [, setError] = useState<string>('');
 
-  // Modals & Booking State
   const [isLookupOpen, setIsLookupOpen] = useState<boolean>(false);
   const [lookupInitialRef, setLookupInitialRef] = useState<string>('');
   const [lookupInitialPhone, setLookupInitialPhone] = useState<string>('');
@@ -99,19 +94,18 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
-        <div className="w-12 h-12 rounded-2xl bg-teal-600 text-white flex items-center justify-center animate-pulse mb-4 shadow-lg shadow-teal-600/30">
+      <div className="min-h-screen bg-primary-600 text-white flex flex-col items-center justify-center p-4">
+        <div className="w-12 h-12 rounded-2xl bg-white/10 text-white flex items-center justify-center animate-pulse mb-4 shadow-lg">
           <HeartPulse className="w-7 h-7" />
         </div>
-        <h2 className="text-xl font-bold tracking-tight">Tapasya Multi-Speciality Hospital Bengaluru</h2>
-        <p className="text-xs text-slate-400 mt-1">Connecting to clinical schedule...</p>
+        <h2 className="text-xl font-bold tracking-tight">Tapasya Multi-Speciality Hospital</h2>
+        <p className="text-xs text-primary-200 mt-1">Connecting to clinical schedule...</p>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased">
-      {/* Navigation Header */}
+    <div className="min-h-screen flex flex-col bg-white text-slate-900 antialiased">
       <Navbar
         business={business}
         onNavigate={handleNavigate}
@@ -120,9 +114,7 @@ export default function App() {
         onOpenBooking={handleOpenBooking}
       />
 
-      {/* Main Content Sections */}
       <main className="flex-1">
-        {/* Hero Section */}
         <Hero
           business={business}
           onBookClick={() => handleOpenBooking()}
@@ -130,13 +122,13 @@ export default function App() {
           onContactClick={() => handleNavigate('contact')}
         />
 
-        {/* Services Catalogue */}
+        <WhyChooseTapasya />
+
         <ServiceCatalogue
           services={services}
           onSelectService={serviceId => handleOpenBooking(serviceId)}
         />
 
-        {/* Multi-Step Real-time Booking Wizard */}
         <BookingWizard
           services={services}
           doctors={doctors}
@@ -146,20 +138,16 @@ export default function App() {
           onOpenLookup={handleOpenLookupWithDetails}
         />
 
-        {/* About & Medical Faculty */}
         <AboutAndDoctors
           doctors={doctors}
           onSelectDoctor={handleSelectDoctorForBooking}
         />
 
-        {/* Verified Patient Reviews */}
         <ReviewsSection reviews={reviews} />
 
-        {/* Location, Directions & Contact */}
         <LocationAndContact business={business} />
       </main>
 
-      {/* Footer */}
       <Footer
         business={business}
         onNavigate={handleNavigate}
@@ -168,7 +156,6 @@ export default function App() {
         onOpenBooking={() => handleOpenBooking()}
       />
 
-      {/* Booking Lookup & Cancellation Modal */}
       <BookingLookupModal
         isOpen={isLookupOpen}
         onClose={() => setIsLookupOpen(false)}
@@ -176,7 +163,6 @@ export default function App() {
         initialPhone={lookupInitialPhone}
       />
 
-      {/* Staff Admin Dashboard */}
       <AdminDashboard
         isOpen={isAdminOpen}
         onClose={() => setIsAdminOpen(false)}
